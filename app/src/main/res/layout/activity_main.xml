@@ -12,7 +12,7 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:itemBackground="@color/white"
         app:itemIconTint="@color/purple_500"
@@ -37,11 +37,10 @@
     <fragment
         android:id="@+id/navHostFragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="410dp"
-        android:layout_height="593dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_main"
@@ -60,6 +59,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/textViewToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

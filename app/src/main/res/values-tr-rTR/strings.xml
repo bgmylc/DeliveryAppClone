@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="category_image">Kategori Resmi</string>
+    <string name="home">Anasayfa</string>
+    <string name="search">Arama</string>
+    <string name="user">Kullanıcı</string>
+    <string name="promotion">Promosyonlar</string>
 </resources>
