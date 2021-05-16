@@ -1,11 +1,13 @@
-package com.begumyolcu.deliveryappclone
+package com.begumyolcu.deliveryappclone.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import com.begumyolcu.deliveryappclone.Categories
 import com.begumyolcu.deliveryappclone.databinding.HomeCardDesignBinding
+import com.begumyolcu.deliveryappclone.fragment.HomeFragmentDirections
 
 class CategoriesAdapter(var mContext:Context, var categoriesList:List<Categories>) : RecyclerView.Adapter<CategoriesAdapter.CardDesignHolder>() {
 

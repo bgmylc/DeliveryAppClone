@@ -5,4 +5,8 @@
     <string name="search">Arama</string>
     <string name="user">Kullanıcı</string>
     <string name="promotion">Promosyonlar</string>
+    <string name="profile">Profil</string>
+    <string name="adresses">Adresler</string>
+    <string name="favourite_restaurants">Favori Restoranlar</string>
+    <string name="payment_methods">Ödeme Metotları</string>
 </resources>

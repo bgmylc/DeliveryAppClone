@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.begumyolcu.deliveryappclone.HomeFragment"
+        android:name="com.begumyolcu.deliveryappclone.fragment.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/categoryDetailFragment"
-        android:name="com.begumyolcu.deliveryappclone.CategoryDetailFragment"
+        android:name="com.begumyolcu.deliveryappclone.fragment.CategoryDetailFragment"
         android:label="CategoryDetailFragment"
         tools:layout="@layout/fragment_category_detail">
         <argument
@@ -25,17 +25,17 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.begumyolcu.deliveryappclone.SearchFragment"
+        android:name="com.begumyolcu.deliveryappclone.fragment.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/userFragment"
-        android:name="com.begumyolcu.deliveryappclone.UserFragment"
+        android:name="com.begumyolcu.deliveryappclone.fragment.UserFragment"
         android:label="fragment_user"
         tools:layout="@layout/fragment_user" />
     <fragment
         android:id="@+id/promotionFragment"
-        android:name="com.begumyolcu.deliveryappclone.PromotionFragment"
+        android:name="com.begumyolcu.deliveryappclone.fragment.PromotionFragment"
         android:label="fragment_promotion"
         tools:layout="@layout/fragment_promotion" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.begumyolcu.deliveryappclone
+package com.begumyolcu.deliveryappclone.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,14 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.begumyolcu.deliveryappclone.Categories
+import com.begumyolcu.deliveryappclone.adapter.CategoriesAdapter
+import com.begumyolcu.deliveryappclone.R
 import com.begumyolcu.deliveryappclone.databinding.FragmentHomeBinding
 
 
 class HomeFragment : Fragment() {
     private lateinit var design:FragmentHomeBinding
-    private lateinit var adapter:CategoriesAdapter
+    private lateinit var adapter: CategoriesAdapter
     private lateinit var categoriesList: ArrayList<Categories>
 
 
@@ -22,6 +24,10 @@ class HomeFragment : Fragment() {
 
         design = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
         design.rvHome.layoutManager = StaggeredGridLayoutManager(4, StaggeredGridLayoutManager.VERTICAL)
+
+        design.homeFragment = this
+        design.homeToolbarTitle = "SEGUM"
+
 
         categoriesList = ArrayList()
         val c1 = Categories(1, "Beverages", "beverages")

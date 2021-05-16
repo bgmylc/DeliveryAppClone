@@ -4,21 +4,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="categoryDetailFragment"
+            type="com.begumyolcu.deliveryappclone.fragment.CategoryDetailFragment" />
+        <variable
+            name="categoryDetailToolbarTitle"
+            type="String" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".CategoryDetailFragment">
+        tools:context=".fragment.CategoryDetailFragment">
 
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarCategoryDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textViewDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Category Detail"
             android:textColor="#009688"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Category Detail" />
+
+        <TextView
+            android:id="@+id/textViewToolbarCategoryDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{categoryDetailToolbarTitle}"
+            android:textColor="#FFC107"
+            android:textSize="35sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
