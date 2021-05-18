@@ -28,8 +28,6 @@ class UserFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         design = DataBindingUtil.inflate(inflater, R.layout.fragment_user, container, false)
-        design.rvUserOne.layoutManager = LinearLayoutManager(requireContext())
-        design.rvUserTwo.layoutManager = LinearLayoutManager(requireContext())
 
         design.userFragment = this
         design.userFragmentToolbarTitle = getString(R.string.profile)
@@ -42,12 +40,15 @@ class UserFragment : Fragment() {
         val i2 = ProfileItem(2, getString(R.string.favourite_restaurants), "fav_logo")
         val i3 = ProfileItem(3, getString(R.string.payment_methods), "payment_logo")
 
+        actionList.add(i1)
+        actionList.add(i2)
+        actionList.add(i3)
 
         adapter = UserAdapter(requireContext(), user)
         adapterTwo = ProfileItemAdapter(requireContext(), actionList)
 
-        design.rvUserOne.adapter = adapter
-        design.rvUserTwo.adapter = adapterTwo
+        design.firstAdapter = adapter
+        design.itemAdapter = adapterTwo
 
         return design.root
     }

@@ -1,5 +1,7 @@
 package com.begumyolcu.deliveryappclone.fragment
 
+import android.app.SearchManager
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -21,5 +23,6 @@ class SearchFragment : Fragment() {
 
         return design.root
     }
+
 
 }
